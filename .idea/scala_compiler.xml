@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="codeSquad-stats,codesquad-loc-plugin_625,https:__github.com_knoldus_CodeSquad-loc-plugin,sbt-stats,stats" />
+  </component>
+</project>
