@@ -43,7 +43,7 @@ object StatsPlugin extends AutoPlugin {
         case Some((state, Value(seq))) =>
           Try {
             val moduleName = projectRef.project
-            val file = new File(s"target/$moduleName.log")
+            val file = new File(s"$moduleName/target/$moduleName.log")
             file.createNewFile()
             val printWriter = new PrintWriter(file)
             printWriter.print(seq.mkString(""))
