@@ -9,10 +9,82 @@
 		extra-sbtVersion="0.13"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20190621103648"/>
+		date="20190625124225"/>
 	<dependencies>
-		<module organisation="default" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20190621103645" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+		<module organisation="com.github.gseitz" name="sbt-release">
+			<revision name="1.0.11" status="release" pubdate="20181231123350" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/sbt-release" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="31">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="1662" time="0" location="/home/randhir/.ivy2/cache/scala_2.10/sbt_0.13/com.github.gseitz/sbt-release/ivy-1.0.11.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.10/sbt_0.13/1.0.11/ivys/ivy.xml"/>
+				<caller organisation="default" name="codesquad-loc-plugin-build" conf="test, compile, runtime" rev="1.0.11" rev-constraint-default="1.0.11" rev-constraint-dynamic="1.0.11" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-release" type="jar" ext="jar" status="no" details="" size="286416" time="0" location="/home/randhir/.ivy2/cache/scala_2.10/sbt_0.13/com.github.gseitz/sbt-release/jars/sbt-release-1.0.11.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-release/scala_2.10/sbt_0.13/1.0.11/jars/sbt-release.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.sbt" name="sbt-sonatype">
+			<revision name="1.1" status="release" pubdate="20160105112139" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xerial/sbt-sonatype" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3329" time="0" location="/home/randhir/.ivy2/cache/scala_2.10/sbt_0.13/org.xerial.sbt/sbt-sonatype/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.10_0.13/1.1/sbt-sonatype-1.1.pom"/>
+				<caller organisation="default" name="codesquad-loc-plugin-build" conf="test, compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-sonatype" type="jar" ext="jar" status="no" details="" size="205689" time="0" location="/home/randhir/.ivy2/cache/scala_2.10/sbt_0.13/org.xerial.sbt/sbt-sonatype/jars/sbt-sonatype-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/sbt/sbt-sonatype_2.10_0.13/1.1/sbt-sonatype-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.2.6" status="release" pubdate="20130904234608" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="9503" time="0" location="/home/randhir/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.pom"/>
+				<caller organisation="org.xerial.sbt" name="sbt-sonatype" conf="default, compile, runtime, master" rev="4.2.6" rev-constraint-default="4.2.6" rev-constraint-dynamic="4.2.6" callerrev="1.1"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="435628" time="0" location="/home/randhir/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.6" status="release" pubdate="20111203080826" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7802" time="0" location="/home/randhir/.ivy2/cache/commons-codec/commons-codec/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.2.6"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="232771" time="0" location="/home/randhir/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071127015410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4212" time="0" location="/home/randhir/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.2.6"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/home/randhir/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.2.5" status="release" pubdate="20130729204428" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="7534" time="0" location="/home/randhir/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.5" callerrev="4.2.6"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="227708" time="0" location="/home/randhir/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20190625124222" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="codesquad-loc-plugin-build" conf="test, compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
@@ -22,7 +94,8 @@
 		<module organisation="com.jsuereth" name="sbt-pgp">
 			<revision name="1.1.1" status="release" pubdate="20180305001441" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="no" details="" size="1768" time="0" location="/home/randhir/.ivy2/cache/scala_2.10/sbt_0.13/com.jsuereth/sbt-pgp/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml"/>
-				<caller organisation="default" name="global-plugins" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<caller organisation="default" name="codesquad-loc-plugin-build" conf="test, compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<caller organisation="org.scala-sbt" name="global-plugins" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
 					<artifact name="sbt-pgp" type="jar" ext="jar" status="no" details="" size="313045" time="0" location="/home/randhir/.ivy2/cache/scala_2.10/sbt_0.13/com.jsuereth/sbt-pgp/jars/sbt-pgp-1.1.1.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jsuereth/sbt-pgp/scala_2.10/sbt_0.13/1.1.1/jars/sbt-pgp.jar"/>
@@ -145,32 +218,6 @@
 				<artifacts>
 					<artifact name="quasiquotes_2.10" type="jar" ext="jar" status="no" details="" size="720704" time="0" location="/home/randhir/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.scala-lang" name="scala-compiler">
-			<revision name="2.10.4" status="release" pubdate="20140319031738" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
-				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
-				<metadata-artifact status="no" details="" size="2953" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.pom"/>
-				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
-				<artifacts>
-					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14445780" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.4.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.10.4" status="release" pubdate="20140319031707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
-				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
-				<metadata-artifact status="no" details="" size="2835" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
-				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
-				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
-				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
-				<artifacts>
-					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3203471" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.4.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -308,43 +355,54 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.6" status="release" pubdate="20150918150528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master, master(*)" position="3">
-				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
-				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
-				<caller organisation="org.spire-math" name="json4s-support_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
-				<caller organisation="org.scala-sbt" name="core-next_2.10" conf="compile" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1.1"/>
-				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1.0"/>
-				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
-				<caller organisation="org.spire-math" name="jawn-parser_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
-				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
-				<caller organisation="com.eed3si9n" name="gigahorse-core_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.3.0"/>
-				<caller organisation="com.jsuereth" name="pgp-library_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.1.1"/>
-				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
-				<caller organisation="com.eed3si9n" name="gigahorse-okhttp_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.3.0"/>
-				<caller organisation="com.typesafe" name="ssl-config-core_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.2.2"/>
-				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
-				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
-				<caller organisation="org.json4s" name="json4s-core_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.10.6" status="release" pubdate="20150918150547" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2809" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.6/scala-compiler-2.10.6.pom"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
 				<artifacts>
-					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132001" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.6.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.jar"/>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14472632" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.6/scala-compiler-2.10.6.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.10.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
-				<evicted-by rev="2.10.6"/>
-				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
-				<caller organisation="org.spire-math" name="json4s-support_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
-				<caller organisation="org.scala-sbt" name="core-next_2.10" conf="compile" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1.1"/>
-				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1.0"/>
-				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
-				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
-				<caller organisation="org.spire-math" name="jawn-parser_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
-				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
-				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
-				<caller organisation="org.json4s" name="json4s-core_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.6" status="release" pubdate="20150918150538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2647" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.pom"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
 				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3206180" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.6" status="release" pubdate="20150918150528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="3">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
+				<caller organisation="org.spire-math" name="json4s-support_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
+				<caller organisation="org.scala-sbt" name="core-next_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.1.1"/>
+				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.1.0"/>
+				<caller organisation="org.spire-math" name="jawn-parser_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
+				<caller organisation="com.eed3si9n" name="gigahorse-core_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.3.0"/>
+				<caller organisation="com.jsuereth" name="pgp-library_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.1.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
+				<caller organisation="com.eed3si9n" name="gigahorse-okhttp_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.3.0"/>
+				<caller organisation="com.typesafe" name="ssl-config-core_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.2.2"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132001" time="0" location="/home/randhir/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
 				</artifacts>
 			</revision>
 		</module>

@@ -1,49 +1,51 @@
 sbtPlugin := true
 
-name := "stats"
-
 organization := "io.github.knoldus"
 
-version := "0.1.10"
-
-crossScalaVersions <<= sbtVersion { ver =>
-  ver match {
-    case "0.12.4" => Seq("2.9.0", "2.9.1", "2.9.2", "2.9.3", "2.10.2")
-    case "0.13.0" => Seq("2.10.2")
-    case _ => sys.error("Unknown sbt version")
-  }
-}
-
-publishTo <<= version { v: String =>
-  val nexus = "https://oss.sonatype.org/"
-  if (v.trim.endsWith("SNAPSHOT")) Some("snapshots" at nexus + "content/repositories/snapshots")
-  else Some("releases" at nexus + "service/local/staging/deploy/maven2")
-}
+name := "codesquad-loc-plugin"
 
 publishMavenStyle := true
 
-publishArtifact in Test := false
+useGpg := true
 
-pomIncludeRepository := { x => false }
+version := "0.0.1"
 
-pomExtra := (
-  <url>https://github.com/knoldus/CodeSquad-loc-plugin</url>
-  <licenses>
-    <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  <scm>
-    <url>git@github.com:knoldus/CodeSquad-loc-plugin.git</url>
-    <connection>scm:git:git@github.com:knoldus/CodeSquad-loc-plugin.git</connection>
-  </scm>
-  <developers>
-    <developer>
-      <id>randhir1910</id>
-      <name>Randhir Kumar</name>
-      <url>https://github.com/knoldus/CodeSquad-loc-plugin</url>
-    </developer>
-  </developers>
+scalaVersion := "2.10.4"
+
+resolvers += "sonatype-snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+
+resolvers += "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
+
+credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credential")
+
+organizationHomepage := Some(url("https://www.knoldus.com/home.knol"))
+
+libraryDependencies ++= Seq("com.typesafe" % "config" % "1.3.2")
+
+scmInfo := Some(
+  ScmInfo(
+    url("https://github.com/knoldus/CodeSquad-loc-plugin"),
+    "scm:git@github.com:knoldus/CodeSquad-loc-plugin.git"
+  )
 )
+
+developers := List(
+  Developer(
+    id    = "randhir1910",
+    name  = "Randhir Kumar",
+    email = "randhir.kumar@knoldus.in",
+    url   = url("https://github.com/knoldus/CodeSquad-loc-plugin")
+  )
+)
+
+description := "It will upload reports in codesquad."
+licenses := List("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt"))
+homepage := Some(url("https://github.com/knoldus/CodeSquad-loc-plugin"))
+
+// Remove all additional repository other than Maven Central from POM
+pomIncludeRepository := { _ => false }
+publishTo := {
+  val nexus = "https://oss.sonatype.org/"
+  if (isSnapshot.value) Some("snapshots" at nexus + "content/repositories/snapshots")
+  else Some("releases" at nexus + "service/local/staging/deploy/maven2")
+}
