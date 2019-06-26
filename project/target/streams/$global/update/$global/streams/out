@@ -9,7 +9,80 @@
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#global-plugins;0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#global-plugins;0.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#global-plugins;0.0 in inter-project[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.xerial.sbt#sbt-sonatype;1.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.xerial.sbt#sbt-sonatype;1.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.xerial.sbt#sbt-sonatype;1.1[0m
+[0m[[0mdebug[0m] [0m	found org.xerial.sbt#sbt-sonatype;1.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpclient;4.2.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.2.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.2.6[0m
+[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpclient;4.2.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcore;4.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.2.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.2.5[0m
+[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpcore;4.2.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving commons-logging#commons-logging;1.1.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1[0m
+[0m[[0mdebug[0m] [0m	found commons-logging#commons-logging;1.1.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving commons-codec#commons-codec;1.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-codec#commons-codec;1.6[0m
+[0m[[0mdebug[0m] [0m	found commons-codec#commons-codec;1.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->com.github.gseitz#sbt-release;1.0.11 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.github.gseitz#sbt-release;1.0.11 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.gseitz#sbt-release;1.0.11 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.gseitz#sbt-release;1.0.11[0m
+[0m[[0mdebug[0m] [0m	found com.github.gseitz#sbt-release;1.0.11 in sbt-chain[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.7 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.jsuereth#sbt-pgp;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.jsuereth#sbt-pgp;1.1.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.jsuereth#sbt-pgp;1.1.1[0m
@@ -519,83 +592,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#serialization_2.10;0.1.0->org.spire-math#json4s-support_2.10;0.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.xerial.sbt#sbt-sonatype;1.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.xerial.sbt#sbt-sonatype;1.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.xerial.sbt#sbt-sonatype;1.1[0m
-[0m[[0mdebug[0m] [0m	found org.xerial.sbt#sbt-sonatype;1.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpclient;4.2.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.2.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.2.6[0m
-[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpclient;4.2.6 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcore;4.2.5 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.2.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.2.5[0m
-[0m[[0mdebug[0m] [0m	found org.apache.httpcomponents#httpcore;4.2.5 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving commons-logging#commons-logging;1.1.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1[0m
-[0m[[0mdebug[0m] [0m	found commons-logging#commons-logging;1.1.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving commons-codec#commons-codec;1.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-codec#commons-codec;1.6[0m
-[0m[[0mdebug[0m] [0m	found commons-codec#commons-codec;1.6 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->org.apache.httpcomponents#httpcore;4.2.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-logging#commons-logging;1.1.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.httpcomponents#httpclient;4.2.6->commons-codec#commons-codec;1.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.xerial.sbt#sbt-sonatype;1.1->org.apache.httpcomponents#httpclient;4.2.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.xerial.sbt#sbt-sonatype;1.1 [compile->master][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->com.github.gseitz#sbt-release;1.0.11 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.github.gseitz#sbt-release;1.0.11 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.gseitz#sbt-release;1.0.11 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.gseitz#sbt-release;1.0.11[0m
-[0m[[0mdebug[0m] [0m	found com.github.gseitz#sbt-release;1.0.11 in sbt-chain[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.7 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#sbt-pgp;1.1.1->com.jsuereth#pgp-library_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#pgp-library_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
@@ -1035,6 +1036,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#sbt-pgp;1.1.1->com.jsuereth#pgp-library_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#pgp-library_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
@@ -2277,6 +2279,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#sbt-pgp;1.1.1->com.jsuereth#pgp-library_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#pgp-library_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
@@ -3243,6 +3246,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#sbt-pgp;1.1.1->com.jsuereth#pgp-library_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#pgp-library_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
@@ -3684,6 +3688,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#codesquad-loc-plugin-build;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#codesquad-loc-plugin-build;0.1-SNAPSHOT->org.scala-sbt#global-plugins;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#global-plugins;0.0->com.jsuereth#sbt-pgp;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#sbt-pgp;1.1.1->com.jsuereth#pgp-library_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#pgp-library_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
@@ -4692,6 +4697,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.xerial.sbt#sbt-sonatype;1.1!sbt-sonatype.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.gseitz#sbt-release;1.0.11!sbt-release.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jsuereth#sbt-pgp;1.1.1!sbt-pgp.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.2.6!httpclient.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.2.5!httpcore.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-codec#commons-codec;1.6!commons-codec.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jsuereth#pgp-library_2.10;1.1.1!pgp-library_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.eed3si9n#gigahorse-okhttp_2.10;0.3.0!gigahorse-okhttp_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt-core-next;0.1.1!sbt-core-next.jar[0m
@@ -4716,10 +4725,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.2.6!httpclient.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.2.5!httpcore.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-codec#commons-codec;1.6!commons-codec.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.11!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.11!main.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.11!compiler-interface.jar[0m
@@ -4764,7 +4769,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.11!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1541ms :: artifacts dl 42ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 989ms :: artifacts dl 24ms[0m
 [0m[[0mdebug[0m] [0m	report for default#codesquad-loc-plugin-build;0.1-SNAPSHOT compile produced in /home/randhir/development/CodeSquad-loc-plugin/project/target/resolution-cache/reports/default-codesquad-loc-plugin-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#codesquad-loc-plugin-build;0.1-SNAPSHOT runtime produced in /home/randhir/development/CodeSquad-loc-plugin/project/target/resolution-cache/reports/default-codesquad-loc-plugin-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#codesquad-loc-plugin-build;0.1-SNAPSHOT test produced in /home/randhir/development/CodeSquad-loc-plugin/project/target/resolution-cache/reports/default-codesquad-loc-plugin-build-test.xml[0m
@@ -4778,5 +4783,5 @@
 [0m[[0mdebug[0m] [0m	report for default#codesquad-loc-plugin-build;0.1-SNAPSHOT docs produced in /home/randhir/development/CodeSquad-loc-plugin/project/target/resolution-cache/reports/default-codesquad-loc-plugin-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#codesquad-loc-plugin-build;0.1-SNAPSHOT pom produced in /home/randhir/development/CodeSquad-loc-plugin/project/target/resolution-cache/reports/default-codesquad-loc-plugin-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#codesquad-loc-plugin-build;0.1-SNAPSHOT scala-tool produced in /home/randhir/development/CodeSquad-loc-plugin/project/target/resolution-cache/reports/default-codesquad-loc-plugin-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1541ms resolve - 42ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (989ms resolve - 24ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
